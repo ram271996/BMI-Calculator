@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rammaheshwari.bmicalculator.MainActivity">
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:id="@+id/text1"
+        android:text="Enter Weight::"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp" />
+
+    <EditText
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:hint="enter weight"
+        android:id="@+id/edit1"
+        android:layout_above="@+id/text2"
+        android:layout_toEndOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="106dp"
+        android:text="Enter height::"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:id="@+id/edit2"
+        android:hint="enter height"
+
+        android:layout_alignTop="@+id/text2"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="BMI Value"
+        android:id="@+id/text3"
+        android:layout_below="@+id/RadioGr2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:id="@+id/text4"
+      android:layout_above="@+id/text5"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Calculate"
+        android:layout_below="@+id/text5"
+        android:layout_alignStart="@+id/text4"
+        android:layout_marginTop="16dp" />
+
+
+    <RadioGroup
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:id="@+id/RadioGr"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/edit1">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="male"
+        android:id="@+id/male"
+        />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+
+            />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:id="@+id/RadioGr2"
+        android:layout_below="@id/text2"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="cms"
+            android:id="@+id/cms"
+
+            />
+
+        <RadioButton
+            android:id="@+id/inches"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="inches"
+            />
+            </RadioGroup>
+        <RadioGroup
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:id="@+id/RadioGr1"
+            android:layout_below="@id/text1"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/kgs"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="kgs" />
+
+            <RadioButton
+                android:id="@+id/pounds"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="pounds" />
+
+        </RadioGroup>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text5"
+        android:layout_below="@+id/text3"
+        android:layout_alignEnd="@+id/edit1"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/RadioGr"
+        android:layout_marginStart="13dp"
+        android:text="Gender"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text6"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginStart="12dp"
+        android:text="Clear" />
+
+</RelativeLayout>
